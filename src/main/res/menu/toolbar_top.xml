@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:title="Kamy says Hi"
+        android:id   ="@+id/tlIcon"
+        android:icon ="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:title   ="Let Kamy say something"
+        android:id      ="@+id/tlInfo"
+        android:icon    ="@drawable/icon_info"
+        app:showAsAction="ifRoom"/>
+</menu>

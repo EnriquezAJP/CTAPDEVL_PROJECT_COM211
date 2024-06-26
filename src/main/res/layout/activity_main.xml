@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:title="KAMY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="KAMY" />
+
+    <ImageView
+        android:id="@+id/imgBox"
+        android:layout_width="365dp"
+        android:layout_height="359dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        app:srcCompat="@mipmap/ic_channel_foreground" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="272dp"
+        android:background="@color/mint_darker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtDisplay"
+            android:layout_width="355dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="casual"
+            android:text="When using the application, press the button on  the left to clear this text. The button in the middle to take a photo, or on the right to open the gallery."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTakePicture"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:icon="@android:drawable/ic_menu_camera"
+            app:iconSize="100px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDisplay"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <Button
+            android:id="@+id/btnOpenGallery"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="72dp"
+            android:textColorLink="#6750A3"
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconSize="50px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnTakePicture"
+            app:layout_constraintTop_toBottomOf="@+id/txtDisplay"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="72dp"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:iconSize="50px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnTakePicture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDisplay" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="361dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/mint"
+            android:fontFamily="casual"
+            android:shadowColor="@color/black"
+            android:text="TRANSLATED TEXT:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="100px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
